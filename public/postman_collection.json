@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "4a1adb7a-89a1-4f5b-adeb-ea2f19855f84",
+		"name": "Dart Frog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17615557"
+	},
+	"item": [
+		{
+			"name": "Todos",
+			"item": [
+				{
+					"name": "Get all Todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{todosURL}}",
+							"host": [
+								"{{todosURL}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Todo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{todosURL}}/17702d6c-82ac-409d-8bd7-145bb4ab79a1",
+							"host": [
+								"{{todosURL}}"
+							],
+							"path": [
+								"17702d6c-82ac-409d-8bd7-145bb4ab79a1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Todo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{todosURL}}/17702d6c-82ac-409d-8bd7-145bb4ab79a1",
+							"host": [
+								"{{todosURL}}"
+							],
+							"path": [
+								"17702d6c-82ac-409d-8bd7-145bb4ab79a1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Todo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Tack care of health\",\n    \"description\": \"Asfd gh jkl;\",\n    \"isCompleted\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{todosURL}}",
+							"host": [
+								"{{todosURL}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Todo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"2 Complete this project\",\n    \"description\": \"2 Get all the knowledge of dart frog & complete the tutorials along with exapmples.\",\n    \"isCompleted\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{todosURL}}/17702d6c-82ac-409d-8bd7-145bb4ab79a1",
+							"host": [
+								"{{todosURL}}"
+							],
+							"path": [
+								"17702d6c-82ac-409d-8bd7-145bb4ab79a1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
